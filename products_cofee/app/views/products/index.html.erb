@@ -1,0 +1,32 @@
+<div class='center'>
+  <h1>Products Store</h1>
+  <br />
+  <form class='hide' id='add_product'>
+    <input placeholder="product name" name='product[name]' required=true />
+    <input placeholder='base price' name='product[base_price]' type='number' required=true />
+    <input placeholder='description' name='product[description]' />
+    <input placeholder='quantity' type='number' name='product[quanity_on_hand]' />
+    <input placeholder='color' name='product[color]' />
+    <input placeholder='weight' name='product[weight]' />
+    <input placeholder='other attributes' name='product[other_attributes]' />
+    <button class='btn' id='new_button' type='submit'>Submit</button>
+  </form>
+   <form class='hide' id='edit_product_form'>
+    <input placeholder="product name" id='product_name' name='product[name]' required=true />
+    <input placeholder='base price' id='product_price' name='product[base_price]' type='number' required=true />
+    <input placeholder='description' id='product_description' name='product[description]' />
+    <input placeholder='quantity' type='number' id='product_quantity' name='product[quanity_on_hand]' />
+    <input placeholder='color' id='product_color' name='product[color]' />
+    <input placeholder='weight' id='product_weight' name='product[weight]' />
+    <input placeholder='other attributes' id='product_attr' name='product[other_attributes]' />
+    <input type='hidden' name='id' id='product_id' />
+    <button class='btn' id='edit_button' type='submit'>Update</button>
+  </form>
+
+
+  <button class ='hide btn' id='back'>Back</button>
+  <button class='btn' id='new_product'>Add Product</button>
+  <div id='products' class='row'>
+
+  </div>
+</div>
